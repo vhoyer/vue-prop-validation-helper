@@ -6,12 +6,12 @@ Some extra utils to help you validate your properties.
 
 Here I will list the helpers provided by this library.
 
-### objectHasAllProperties
+### hasAllProperties
 
 Check for every property one object must have to succed validation.
 
 ```ts
-export function objectHasAllProperties(object: Object,properties: Array<String>) { ... }
+export function hasAllProperties(object: Object,properties: Array<String>) { ... }
 ```
 
 ```js
@@ -20,7 +20,7 @@ export default {
     myProp: {
       type: Object,
       required: true,
-      validator: object => objectHasAllProperties(object, [
+      validator: object => hasAllProperties(object, [
         'each',
         'item',
         'on',

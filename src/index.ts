@@ -1,4 +1,4 @@
-export function objectHasAllProperties(object: Object, requiredProperties: Array<string>) {
+export function hasAllProperties(object: Object, requiredProperties: Array<string>) {
   return requiredProperties.every((key) => {
     const objectHasProp = object.hasOwnProperty(key);
 
