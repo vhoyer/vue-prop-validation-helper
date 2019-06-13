@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "A Vue validator lib that provide utilities to help you validate your properties",
   "main": "dist/index.js",
+  "types": "dist/index.d.ts",
   "scripts": {
     "test": "jest",
     "build": "tsc"
