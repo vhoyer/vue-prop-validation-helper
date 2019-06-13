@@ -1,4 +1,4 @@
-# Vue Validator Extras
+# Vue Prop Validation Helper
 
 Some extra utils to help you validate your properties.
 

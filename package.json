@@ -1,5 +1,5 @@
 {
-  "name": "vue-validator-extras",
+  "name": "vue-prop-validation-helper",
   "version": "1.0.0",
   "description": "A Vue validator lib that provide utilities to help you validate your properties",
   "main": "dist/index.js",
@@ -13,11 +13,11 @@
     "url": "git+https://github.com/vhoyer/vue-validator-extras.git"
   },
   "keywords": [
-    "vue",
-    "validator",
-    "object",
     "helper",
-    "keys"
+    "props",
+    "validation",
+    "validator",
+    "vue"
   ],
   "author": "Vinícius Hoyer",
   "license": "ISC",
