@@ -1,6 +1,6 @@
-export function hasAllProperties(object: Object, requiredProperties: Array<string>) {
+export function hasAllProperties(obj: object, requiredProperties: string[]) {
   return requiredProperties.every((key) => {
-    const objectHasProp = object.hasOwnProperty(key);
+    const objectHasProp = obj.hasOwnProperty(key);
 
     if (!objectHasProp) {
       console.error(`Object is missing "${key}" property which is required`);
