@@ -6,6 +6,7 @@
   "types": "dist/index.d.ts",
   "scripts": {
     "test": "jest",
+    "lint": "tslint -c tslint.json 'src/**/*.ts'",
     "build": "tsc"
   },
   "repository": {
@@ -26,6 +27,7 @@
   },
   "homepage": "https://github.com/vhoyer/vue-validator-extras#readme",
   "devDependencies": {
+    "tslint": "^5.17.0",
     "typescript": "^3.5.2"
   }
 }
