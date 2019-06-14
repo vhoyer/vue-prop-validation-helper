@@ -1,5 +1,7 @@
 # Vue Prop Validation Helper
 
+[![CircleCI](https://circleci.com/gh/vhoyer/vue-prop-validation-helper.svg?style=svg)](https://circleci.com/gh/vhoyer/vue-prop-validation-helper)
+
 Some extra utils to help you validate your properties.
 
 ## helpers
