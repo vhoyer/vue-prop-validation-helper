@@ -5,7 +5,8 @@
     ],
     "jsRules": {},
     "rules": {
-			"no-console": { "severity": "off" }
-		},
+      "no-console": { "severity": "off" },
+      "quotemark": [true, "single"]
+    },
     "rulesDirectory": []
 }
