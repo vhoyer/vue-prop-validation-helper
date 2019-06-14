@@ -3,7 +3,7 @@ export function hasAllProperties(obj: object, requiredProperties: string[]) {
     const objectHasProp = obj.hasOwnProperty(key);
 
     if (!objectHasProp) {
-      console.error(`Object is missing "${key}" property which is required`);
+      console.error(`Object is missing "${key}" property, which is required`);
     }
 
     return objectHasProp;
