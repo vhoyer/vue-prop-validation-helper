@@ -6,6 +6,8 @@
   "types": "dist/index.d.ts",
   "scripts": {
     "test": "jest",
+    "test:coverage": "jest --coverage",
+    "test:coverage:report": "jest --coverage && cat ./coverage/lcov.info | npx coveralls",
     "lint": "tslint -c tslint.json 'src/**/*.ts'",
     "build": "tsc",
     "publish": "tsc && npm publish"
