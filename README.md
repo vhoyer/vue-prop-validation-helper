@@ -14,7 +14,7 @@ Here I will list the helpers provided by this library.
 Check for every property one object must have to succed validation.
 
 ```ts
-export function hasAllProperties(object: Object,properties: Array<String>) { ... }
+function hasAllProperties(obj: object, requiredProperties: string[]): boolean;
 ```
 
 ```js
