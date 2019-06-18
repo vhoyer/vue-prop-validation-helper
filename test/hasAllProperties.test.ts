@@ -18,14 +18,16 @@ describe('Validators > hasAllProperties', () => {
   });
 
   const requiredProperties = [
-    'all',
-    'props',
+    'prop1',
+    'prop2',
+    'prop3',
   ];
 
   describe('when an object is passed with all required properties', () => {
     const obj = {
-      all: 'random',
-      props: 'value',
+      prop1: 'all',
+      prop2: 'props',
+      prop3: 'are present',
     };
 
     it('returns true', () => {
@@ -41,7 +43,8 @@ describe('Validators > hasAllProperties', () => {
 
   describe('when an object is passed missing a required property', () => {
     const obj = {
-      props: 'value',
+      prop1: 'prop3',
+      prop2: 'is missing',
     };
 
     it('returns false', () => {
@@ -51,7 +54,7 @@ describe('Validators > hasAllProperties', () => {
     it('call console.error with a message containing missing property name', () => {
       hasAllProperties(obj, requiredProperties);
 
-      expect(consoleError).toBeCalledWith('Object is missing "all" property, which is required');
+      expect(consoleError).toBeCalledWith('Object is missing "prop3" property, which is required');
     });
   });
 });
