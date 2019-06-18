@@ -1,6 +1,6 @@
 {
   "name": "vue-prop-validation-helper",
-  "version": "2.2.0",
+  "version": "2.3.0",
   "description": "A Vue validator lib that provide utilities to help you validate your properties",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
