@@ -57,4 +57,16 @@ describe('Validators > hasAllProperties', () => {
       expect(consoleError).toBeCalledWith('Object is missing "prop3" property, which is required');
     });
   });
+
+  describe('when an empty array is passed as requiredProperties', () => {
+    const obj = {
+      prop1: 'well',
+      prop2: 'just',
+      prop3: 'whatever',
+    };
+
+    it('returns true', () => {
+      expect(hasAllProperties(obj, [])).toBe(true);
+    });
+  });
 });
