@@ -1,4 +1,4 @@
-import { hasAllProperties } from '../src/index';
+import { hasAllProperties } from '../src';
 
 describe('Validators > hasAllProperties', () => {
   const consoleError = jest.fn();
