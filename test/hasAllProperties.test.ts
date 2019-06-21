@@ -54,7 +54,25 @@ describe('Validators > hasAllProperties', () => {
     it('call console.error with a message containing missing property name', () => {
       hasAllProperties(obj, requiredProperties);
 
-      expect(consoleError).toBeCalledWith('Object is missing "prop3" property, which is required');
+      expect(consoleError).toBeCalledWith(expect.stringContaining('prop3'));
+    });
+  });
+
+  describe('when an object is passed missing more than one required property', () => {
+    const obj = {
+      everthing: 'is missing',
+    };
+
+    it('returns false', () => {
+      expect(hasAllProperties(obj, requiredProperties)).toBe(false);
+    });
+
+    it('call console.error with a message containing all missing properties names', () => {
+      hasAllProperties(obj, requiredProperties);
+
+      expect(consoleError).toBeCalledWith(expect.stringContaining('prop1'));
+      expect(consoleError).toBeCalledWith(expect.stringContaining('prop2'));
+      expect(consoleError).toBeCalledWith(expect.stringContaining('prop3'));
     });
   });
 

@@ -1,13 +1,25 @@
 function hasAllProperties(obj: object, requiredProperties: string[]) {
-  return requiredProperties.every((key) => {
-    const objectHasProp = obj.hasOwnProperty(key);
-
-    if (!objectHasProp) {
-      console.error(`Object is missing "${key}" property, which is required`);
+  const missingProperties = requiredProperties.reduce((acc: string[], cur) => {
+    if (obj.hasOwnProperty(cur)) {
+      return acc;
     }
 
-    return objectHasProp;
-  });
+    acc.push(cur);
+
+    return acc;
+  }, []);
+
+  if (missingProperties.length) {
+    console.error(
+      `Object is missing the following properties, which are all required:\n- ${
+        missingProperties.join('\n- ')
+      }`,
+    );
+
+    return false;
+  } else {
+    return true;
+  }
 }
 
 export default hasAllProperties;

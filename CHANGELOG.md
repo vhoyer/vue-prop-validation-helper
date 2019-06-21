@@ -4,6 +4,7 @@
 
 Added validator:
 - everyItemHasAllProperties
+- hasAllProperties now lists all missing properties
 
 ## v2.3.0
 
