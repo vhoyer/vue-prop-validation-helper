@@ -39,3 +39,35 @@ export default {
   },
 }
 ```
+
+### everyItemHasAllProperties
+
+Check if every item is a object and every object has all required properties.
+
+```ts
+function everyItemHasAllProperties(array: object[], requiredProperties: string[]): boolean;
+```
+
+Example:
+```js
+export default {
+  props: {
+    myProp: {
+      type: Array,
+      required: true,
+      validator: array => everyItemHasAllProperties(array, [
+        'each',
+        'item',
+        'on',
+        'this',
+        'list',
+        'is',
+        'a',
+        'property',
+        'myProp',
+        'should',
+        'have',
+      ]),
+  },
+}
+```
