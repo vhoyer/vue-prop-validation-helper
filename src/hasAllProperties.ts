@@ -1,13 +1,7 @@
+import listMissingPropertiesFrom from './helper/listMissingProperties';
+
 function hasAllProperties(obj: object, requiredProperties: string[]) {
-  const missingProperties = requiredProperties.reduce((acc: string[], cur) => {
-    if (obj.hasOwnProperty(cur)) {
-      return acc;
-    }
-
-    acc.push(cur);
-
-    return acc;
-  }, []);
+  const missingProperties = listMissingPropertiesFrom(obj, { requiredProperties });
 
   if (missingProperties.length) {
     console.error(
