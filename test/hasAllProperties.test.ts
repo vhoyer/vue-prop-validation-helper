@@ -1,5 +1,7 @@
 import { hasAllProperties } from '../src';
 
+console.warn = jest.fn();
+
 describe('Validators > hasAllProperties', () => {
   const consoleError = jest.fn();
   let oldError: any;

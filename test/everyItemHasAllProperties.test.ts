@@ -7,6 +7,7 @@ describe('Validators > everyItemHasAllProperties', () => {
   beforeAll(() => {
     ({ error: oldError } = console);
     console.error = consoleError;
+    console.warn = jest.fn();
   });
 
   afterAll(() => {
