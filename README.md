@@ -9,5 +9,7 @@ Some extra utils to help you validate your properties.
 
 Here I will list the helpers provided by this library.
 
-- [hasAllProperties](./docs/hasAllProperties.md)
-- [everyItemHasAllProperties](./docs/everyItemHasAllProperties.md)
+- [everyItemHasAllProperties (DEPRECATED: use everyItemOfArrayShouldHave)](./docs/everyItemHasAllProperties.md)
+- [everyItemOfArrayShouldHave](./docs/everyItemOfArrayShouldHave.md)
+- [hasAllProperties (DEPRECATED: use objectShouldHave)](./docs/hasAllProperties.md)
+- [objectShouldHave](./docs/objectShouldHave.md)
