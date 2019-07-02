@@ -2,13 +2,16 @@ import { everyItemOfArrayShouldHave } from '../src';
 
 describe('Validators > everyItemOfArrayShouldHave', () => {
   const consoleError = jest.fn();
+  const consoleTable = jest.fn();
 
   beforeAll(() => {
     console.error = consoleError;
+    console.table = consoleTable;
   });
 
   afterEach(() => {
     consoleError.mockReset();
+    consoleTable.mockReset();
   });
 
   it('returns a function to serve as the validator', () => {
@@ -46,6 +49,7 @@ describe('Validators > everyItemOfArrayShouldHave', () => {
       beforeEach(() => {
         result = validator([
           { doesNotHaveName: 'awh' },
+          { neitherDoThisHave: 'awh2' },
         ]);
       });
 
@@ -53,10 +57,16 @@ describe('Validators > everyItemOfArrayShouldHave', () => {
         expect(result).toBe(false);
       });
 
-      it('does call console.error with missing value', () => {
-        expect(consoleError).toBeCalledWith(
-          expect.stringContaining('name'),
-        );
+      it('does call console.error', () => {
+        expect(consoleError).toBeCalled();
+      });
+
+      it('call console.table with the missing properties in the corresponding indexes', () => {
+        expect(consoleTable).toBeCalledWith([// an array with arrays:
+          // containing the missing properties in each item
+          ['name'],
+          ['name'],
+        ]);
       });
     });
   });
