@@ -1,5 +1,7 @@
 # `everyItemHasAllProperties`
 
+***[DEPRECATED] use [`everyItemOfArrayShouldHave`](./everyItemOfArrayShouldHave.md) instead***
+
 Check if every item is a object and every object has all required properties.
 
 ## Declaration

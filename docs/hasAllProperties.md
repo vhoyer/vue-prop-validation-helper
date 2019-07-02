@@ -1,5 +1,7 @@
 # `hasAllProperties`
 
+***[DEPRECATED] use [`objectShouldHave`](./objectShouldHave.md) instead***
+
 Check for every property one object must have to succeed validation.
 
 ## Declaration
@@ -7,6 +9,7 @@ Check for every property one object must have to succeed validation.
 ```ts
 function hasAllProperties(obj: object, requiredProperties: string[]): boolean;
 ```
+
 ## Tests
 
 ```
