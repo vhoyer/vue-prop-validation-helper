@@ -29,11 +29,11 @@
   },
   "homepage": "https://github.com/vhoyer/vue-validator-extras#readme",
   "devDependencies": {
-    "@types/jest": "^24.0.14",
+    "@types/jest": "^24.0.18",
     "@types/node": "^12.0.8",
-    "jest": "^24.8.0",
-    "ts-jest": "^24.0.2",
-    "tslint": "^5.17.0",
-    "typescript": "^3.5.2"
+    "jest": "^24.9.0",
+    "ts-jest": "^24.1.0",
+    "tslint": "^5.20.0",
+    "typescript": "^3.6.3"
   }
 }
