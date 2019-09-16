@@ -55,7 +55,7 @@ describe('Validators > shouldBeOneOf', () => {
 
       it('calls console.error with a friendly message', () => {
         expect(consoleError).toBeCalledWith(
-          'The value received was `option 3`, but one of these were expected:\n',
+          'The value received was `', 'option 3', '`, but one of these were expected:\n',
           '- option 1\n',
           '- option 2\n',
         );

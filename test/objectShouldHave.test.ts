@@ -48,15 +48,21 @@ describe('Validators > objectShouldHave', () => {
       validator = objectShouldHave(['prop2', 'prop3']);
       validator({ prop1: 'yay' });
 
-      expect(consoleError).toBeCalledWith(expect.stringContaining('prop2'));
-      expect(consoleError).toBeCalledWith(expect.stringContaining('prop3'));
+      expect(consoleError).toBeCalledWith(
+        'Object (', { prop1: 'yay' }, ') is missing the following properties, which are all required:\n',
+        '- prop2\n',
+        '- prop3\n',
+      );
     });
 
     it('does not list properties present on the object when value fails validation', () => {
-      validator = objectShouldHave(['prop2', 'prop3']);
+      validator = objectShouldHave(['prop1', 'prop2']);
       validator({ prop1: 'yay' });
 
-      expect(consoleError).not.toBeCalledWith(expect.stringContaining('prop1'));
+      expect(consoleError).toBeCalledWith(
+        'Object (', { prop1: 'yay' }, ') is missing the following properties, which are all required:\n',
+        '- prop2\n',
+      );
     });
   });
 });

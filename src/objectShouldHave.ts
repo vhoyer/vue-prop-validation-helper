@@ -6,9 +6,8 @@ function objectShouldHave(requiredProperties: string[]) {
 
     if (missingProperties.length) {
       console.error(
-        `Object is missing the following properties, which are all required:\n- ${
-          missingProperties.join('\n- ')
-        }`,
+        'Object (', obj, ') is missing the following properties, which are all required:\n',
+        ...missingProperties.map((prop) => `- ${prop}\n`),
       );
 
       return false;
