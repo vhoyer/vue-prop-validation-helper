@@ -9,7 +9,11 @@ Some extra utils to help you validate your properties.
 
 Here I will list the helpers provided by this library.
 
-- [everyItemHasAllProperties (DEPRECATED: use everyItemOfArrayShouldHave)](./docs/everyItemHasAllProperties.md)
 - [everyItemOfArrayShouldHave](./docs/everyItemOfArrayShouldHave.md)
-- [hasAllProperties (DEPRECATED: use objectShouldHave)](./docs/hasAllProperties.md)
 - [objectShouldHave](./docs/objectShouldHave.md)
+- [shouldBeOneOf](./docs/shouldBeOneOf.md)
+
+### Deprecated helpers
+
+- [everyItemHasAllProperties (DEPRECATED: use everyItemOfArrayShouldHave)](./docs/everyItemHasAllProperties.md)
+- [hasAllProperties (DEPRECATED: use objectShouldHave)](./docs/hasAllProperties.md)
