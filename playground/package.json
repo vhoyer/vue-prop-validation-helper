@@ -1,0 +1,22 @@
+{
+  "name": "test_project",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.html",
+  "scripts": {
+    "dev": "parcel index.html",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "parcel-bundler": "^1.12.4",
+    "vue": "^2.6.10",
+    "vue-hot-reload-api": "^2.3.4",
+    "vue-prop-validation-helper": "../"
+  },
+  "devDependencies": {
+    "@vue/component-compiler-utils": "^3.0.2",
+    "vue-template-compiler": "^2.6.10"
+  }
+}

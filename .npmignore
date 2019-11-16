@@ -1,3 +1,5 @@
 README.md
 jest.config.json
 test/
+playground/
+coverage/
