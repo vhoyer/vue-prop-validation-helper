@@ -1,5 +1,5 @@
-function shouldBeOneOf(options: string[]) {
-  return (value: string): boolean => {
+function shouldBeOneOf(options: any[]) {
+  return (value: any): boolean => {
     const result = options.includes(value);
 
     if (!result) {
