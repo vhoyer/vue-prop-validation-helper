@@ -4,6 +4,9 @@
   "description": "A Vue validator lib that provide utilities to help you validate your properties",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
+  "files": [
+    "./dist/**/*"
+  ],
   "scripts": {
     "lint": "tslint -c tslint.json 'src/**/*.ts'",
     "test": "jest",
