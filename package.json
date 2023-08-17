@@ -2,13 +2,14 @@
   "name": "vue-prop-validation-helper",
   "version": "3.0.1",
   "description": "A Vue validator lib that provide utilities to help you validate your properties",
+  "type": "module",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "files": [
     "./dist/**/*"
   ],
   "scripts": {
-    "lint": "tslint -c tslint.json 'src/**/*.ts'",
+    "lint": "eslint 'src/**/*.ts'",
     "test": "jest",
     "test:coverage": "jest --coverage",
     "test:coverage:report": "jest --coverage && cat ./coverage/lcov.info | npx coveralls",
@@ -36,10 +37,12 @@
   "devDependencies": {
     "@types/jest": "^24.9.1",
     "@types/node": "^12.12.42",
-    "jest": "^24.9.0",
+    "@typescript-eslint/eslint-plugin": "^6.4.0",
+    "@typescript-eslint/parser": "^6.4.0",
+    "eslint": "^8.47.0",
+    "jest": "^29.6.2",
     "np": "^7.6.2",
-    "ts-jest": "^24.3.0",
-    "tslint": "^5.20.1",
-    "typescript": "^3.9.3"
+    "ts-jest": "^29.1.1",
+    "typescript": "^5.1.6"
   }
 }

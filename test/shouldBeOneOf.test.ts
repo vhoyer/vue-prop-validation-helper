@@ -1,10 +1,10 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
 import { shouldBeOneOf } from '../src';
 
 describe('Validators > shouldBeOneOf', () => {
   let consoleError: any;
 
   beforeAll(() => {
-    // tslint:disable-next-line:no-empty
     consoleError = jest.spyOn(console, 'error').mockImplementation(() => {});
   });
 
