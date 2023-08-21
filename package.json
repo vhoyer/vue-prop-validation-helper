@@ -34,6 +34,9 @@
     "url": "https://github.com/vhoyer/vue-validator-extras/issues"
   },
   "homepage": "https://github.com/vhoyer/vue-validator-extras#readme",
+  "engines": {
+    "node": ">=18.0.0"
+  },
   "devDependencies": {
     "@types/jest": "^24.9.1",
     "@types/node": "^12.12.42",
@@ -41,7 +44,7 @@
     "@typescript-eslint/parser": "^6.4.0",
     "eslint": "^8.47.0",
     "jest": "^29.6.2",
-    "np": "^7.6.2",
+    "np": "^8.0.4",
     "ts-jest": "^29.1.1",
     "typescript": "^5.1.6"
   }
