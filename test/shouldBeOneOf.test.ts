@@ -1,11 +1,12 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
+import { describe, beforeAll, afterEach, it, expect, beforeEach, vi } from 'vitest';
 import { shouldBeOneOf } from '../src';
 
 describe('Validators > shouldBeOneOf', () => {
   let consoleError: any;
 
   beforeAll(() => {
-    consoleError = jest.spyOn(console, 'error').mockImplementation(() => {});
+    consoleError = vi.spyOn(console, 'error').mockImplementation(() => {});
   });
 
   afterEach(() => {

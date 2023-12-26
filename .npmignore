@@ -1,5 +1,5 @@
 README.md
-jest.config.json
+vitest.config.ts
 test/
 playground/
 coverage/

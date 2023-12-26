@@ -1,7 +1,8 @@
+import { describe, beforeAll, afterEach, it, expect, vi } from 'vitest'
 import { objectShouldHave } from '../src';
 
 describe('Validators > objectShouldHave', () => {
-  const consoleError = jest.fn();
+  const consoleError = vi.fn();
 
   beforeAll(() => {
     console.error = consoleError;
