@@ -1,4 +1,4 @@
-import listMissingPropertiesFrom from '../helper/listMissingProperties';
+import listMissingPropertiesFrom from '../helper/listMissingProperties.js';
 
 function everyItemOfArrayShouldHave(requiredProperties: string[]) {
   // return the vue validator function
